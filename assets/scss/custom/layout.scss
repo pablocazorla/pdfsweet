@@ -1,0 +1,54 @@
+body {
+  background-color: $bg-color;
+  overflow: hidden;
+}
+
+#main {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.document {
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+$pagination-width: 200px;
+$layers-width: 360px;
+
+.pagination {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: $pagination-width;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.vista {
+  position: absolute;
+  top: 0;
+  left: $pagination-width;
+  bottom: 0;
+  right: $layers-width;
+  overflow: scroll;
+}
+.layers {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: $layers-width;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
